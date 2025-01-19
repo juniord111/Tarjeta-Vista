@@ -109,18 +109,18 @@ header p{
 
 @media (max-width: 440px) {
     .container{
-        width: 90%;
+        min-width:90%;
     }
     header{
-        font-size: 12px;
+        font-size: 16px;
     }
     header h1{
-        font-size: 16px;
+        font-size: 20px;
     }
     .author img{
         width: 15%;
     }
     .author{
-        font-size: 12px;
+        font-size: 14px;
     }
 }
