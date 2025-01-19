@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Figtree', sans-serif;
+    background-color:  hsl(47, 88%, 63%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: white;
+    width: 50%;
+    height: 75%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    border-radius: 5%;
+    border: 1px solid black;
+    box-shadow: 12px 12px 5px black;
+}
+
+.imagen{
+    margin-top: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+ }
+ 
+ .imagen img {
+    max-width: 100%;
+    border-radius: 5%;
+    height: auto;
+ }
+ header{
+    font-size: 16px;
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+ }
+ header .learning{
+    font-size: 15px;
+    text-align: center;
+    background-color: hsl(47, 88%, 63%);
+    font-weight: bolder;
+    color:  hsl(0, 0%, 7%);
+    width: 25%;
+    margin-bottom: 4%;
+ }
+
+ header span{
+    font-size: 13px;
+    
+ }
+
+ header h1{
+    margin-top: 4%;
+    margin-bottom: 8%;
+    font-size: 20px;
+ }
+ header p{
+    color: hsl(0, 0%, 42%);
+ }
+
+.author{
+    display: flex;
+    justify-content: initial;
+    align-items: center;
+    width: 90%;
+    margin-top:10%;
+    margin-bottom: 5%;
+}
+ .author img{
+    width: 20%;
+    border-radius: 50%;
+    margin-right: 5%;
+ }
+
+ .author{
+    font-weight: bolder;
+ }
+
+@media (max-width: 440px){
+    .container{
+        width: 85%;
+    }
+    header{
+        font-size: 14px;
+    }
+    header h1{
+        font-size: 18px;
+    }
+    .author img{
+        width: 15%;
+    }
+    .author{
+        font-size: 14px;
+    }
+    
+}
