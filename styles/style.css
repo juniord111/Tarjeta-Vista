@@ -15,35 +15,38 @@ body{
 
 .container{
     background-color: white;
-    width: 50%;
-    height: 75%;
+    max-width: 35%;
+    height: auto;
     flex-direction: column;
     display: flex;
     align-items: center;
     border-radius: 5%;
     border: 1px solid black;
     box-shadow: 12px 12px 5px black;
+    padding: 20px;
 }
 
 .imagen{
-    margin-top: 5%;
-    width: 90%;
+    margin-top: 2%;
+    width: 100%;
     display: flex;
     justify-content: center;
  }
  
  .imagen img {
-    max-width: 100%;
+    min-width: 100%;
     border-radius: 5%;
     height: auto;
  }
- header{
+
+header{
     font-size: 16px;
-    width: 90%;
+    width: 100%;
     margin-top: 5%;
-    margin-left: 5%;
- }
- header .learning{
+    margin-left: 2%;
+}
+
+header .learning{
     font-size: 15px;
     text-align: center;
     background-color: hsl(47, 88%, 63%);
@@ -51,43 +54,44 @@ body{
     color:  hsl(0, 0%, 7%);
     width: 25%;
     margin-bottom: 4%;
- }
+}
 
- header span{
+header span{
     font-size: 13px;
-    
- }
+}
 
- header h1{
+header h1{
     margin-top: 4%;
     margin-bottom: 8%;
     font-size: 20px;
- }
- header p{
+}
+
+header p{
     color: hsl(0, 0%, 42%);
- }
+}
 
 .author{
     display: flex;
     justify-content: initial;
     align-items: center;
-    width: 90%;
-    margin-top:10%;
+    width: 100%;
+    margin-top: 10%;
     margin-bottom: 5%;
 }
- .author img{
+
+.author img{
     width: 20%;
     border-radius: 50%;
     margin-right: 5%;
- }
+}
 
- .author{
+.author{
     font-weight: bolder;
- }
+}
 
-@media (max-width: 440px){
+@media (max-width: 768px) {
     .container{
-        width: 85%;
+        width: 80%;
     }
     header{
         font-size: 14px;
@@ -96,10 +100,27 @@ body{
         font-size: 18px;
     }
     .author img{
-        width: 15%;
+        width: 25%;
     }
     .author{
         font-size: 14px;
     }
-    
+}
+
+@media (max-width: 440px) {
+    .container{
+        width: 90%;
+    }
+    header{
+        font-size: 12px;
+    }
+    header h1{
+        font-size: 16px;
+    }
+    .author img{
+        width: 15%;
+    }
+    .author{
+        font-size: 12px;
+    }
 }
